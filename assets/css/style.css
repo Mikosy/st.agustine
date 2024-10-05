@@ -342,5 +342,15 @@ select:focus {
   color: #666;
 }
 
+.contact-us {
+  background-image: linear-gradient(to top, transparent, #000), url(../images/pexels-panditwiguna-1128317.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 60vh;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 
 /* End */
