@@ -170,7 +170,7 @@ a {
 
 .carousel .carousel-inner .carousel-item .carousel-caption h5 {
   background-color: #f3f3f3;
-  font-size: 3.66rem;
+  font-size: 3.4rem;
   padding: 7px;
   font-weight: bolder;
   color: #8d5f0a;
@@ -287,6 +287,30 @@ main .first-column {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/* End */
+
+/* Modal for mass booking */
+::placeholder {
+  font-size: .75rem;
+}
+
+.modal .modal-header h1 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #a66e0f;
+  font-weight: 700;
+}
+
+.modal-body {
+  padding: 30px;
+}
+
+.modal-body form input:focus,
+textarea:focus,
+select:focus {
+  border-bottom: 3px solid #8d5f0a;
 }
 
 /* End */
