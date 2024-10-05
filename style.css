@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header/nav style start */
+.wrapper nav {
+  width: 100%;
+  /* position: fixed; */
+  /* z-index: 50; */
+}
+
+.top-header {
+  background: linear-gradient(to right, white, #a57523, rgb(255, 255, 255));
+  padding: 10px;
+
+}
+
+.top-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.top-header-mail a {
+  color: #d3a54d;
+  font-size: .7654rem;
+  font-weight: bold;
+}
+
+.header-icons {
+  color: #d3a54d;
+}
+
+.mail-envelop {
+  color: #d3a54d;
+}
+
+.mail-envelop:hover,
+.top-header-mail a:hover {
+  color: #8d5f0a;
+  cursor: pointer;
+}
+
+.social-icons span {
+  margin: 15px;
+}
+
+.navbar {
+  background-color: white;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  object-fit: contain;
+  width: 100;
+}
+
+.logo-name {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #d3a54d;
+}
+
+.nav-link {
+  color: #d3a54d;
+}
+
+/* Start */
+
+/* Parent container of the dropdown */
+/* Parent container of the dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hide the dropdown menu by default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  width: 250px;
+  padding: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: all 0.3s ease;
+}
+
+/* Dropdown hover effect */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Style for the dropdown items */
+.dropdown-item {
+  color: #343a40;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: .78rem;
+  font-family: "Cedarville Cursive", cursive;
+  display: block;
+  border-radius: 3px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Hover effect for the dropdown items */
+.dropdown-item:hover {
+  background-color: #8d5f0a;
+  color: #fff;
+}
+
+/* Divider styling */
+.dropdown-divider {
+  margin: 10px 0;
+  border-color: #e0e0e0;
+}
+
+/* Optional spacing between the dropdown menu and the trigger button */
+.dropdown-menu {
+  margin-top: 5px;
+}
+
+
+/* End */
+
+/* Carousel */
+
+.carousel .carousel-indicators button {
+  height: 27px;
+  width: 27px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+}
+
+.carousel .carousel-indicators button.active {
+  background: #a57523;
+  border: 3px solid #fff;
+
+}
+
+.carousel .carousel-inner .carousel-item .carousel-caption {
+  margin-bottom: 150px;
+}
+
+.carousel .carousel-inner .carousel-item .carousel-caption h5 {
+  background-color: #f3f3f3;
+  font-size: 3.66rem;
+  padding: 7px;
+  font-weight: bolder;
+  color: #8d5f0a;
+}
+
+.carousel .carousel-inner .carousel-item .carousel-caption p {
+  background-color: #f3f3f3;
+  width: auto;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Style for the link inside the carousel caption */
+.styling-a {
+  padding: 15px 40px;
+  border-radius: 40px;
+  background: #8d5f0a;
+  /* Initial background color */
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  transition: background 0.4s ease, transform 0.4s ease;
+  position: relative;
+}
+
+.styling-a:hover {
+  transform: translateX(10px);
+  background: #a66e0f;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Style for both carousel control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  /* Makes the button circular */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  /* Smooth transition effect */
+}
+
+/* Style for the control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+  background-size: 100% 100%;
+  /* Ensures the icon fits the container */
+  filter: invert(1);
+  /* Makes the icons white for contrast */
+}
+
+/* Hover effect for both buttons */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Darker background on hover */
+}
+
+/* Optional: Adjust positioning to center vertically */
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  filter: brightness(1.5) sepia(1) hue-rotate(40deg) saturate(5);
+  /* Hover effect that makes it gold */
+}
+
+
+
+/* Carousel End */
+
+/* Main */
+
+main .section-one {
+  /* height: 300px; */
+  /* background: #efefef; */
+}
+
+main .section-one h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #a66e0f;
+  font-weight: 700;
+}
+
+main .section-one p {
+  font-family: "Cedarville Cursive", cursive;
+  padding-top: 0;
+  font-style: italic;
+}
+
+main .section-one .second-h3 {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-transform: none;
+  font-weight: 300;
+  text-align: justify;
+  color: #222;
+}
+
+main .first-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* End */
