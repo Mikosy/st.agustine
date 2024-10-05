@@ -18,3 +18,34 @@
 //         }
 //     });
 // });
+
+
+function animateCounter(counterElement, targetValue, duration, isFormatted) {
+    let startValue = 0;
+    const stepTime = Math.abs(Math.floor(duration / targetValue));
+    const counter = setInterval(function () {
+        startValue += 1;
+        if (isFormatted) {
+            // Format the number with commas and add a "+" sign
+            counterElement.textContent = startValue.toLocaleString() + '+';
+        } else {
+            // No formatting, just the number
+            counterElement.textContent = startValue;
+        }
+        if (startValue >= targetValue) {
+            clearInterval(counter);
+        }
+    }, stepTime);
+}
+
+// Run animation when the page has loaded
+window.onload = function () {
+    const parishionersCounter = document.getElementById("parishioners-counter");
+    const priestsCounter = document.getElementById("priests-counter");
+
+    // Format parishioners with commas and "+" sign
+    animateCounter(parishionersCounter, parishionersCounter.getAttribute('data-count'), 500, true);
+
+    // Do not format priests (no commas or "+" sign)
+    animateCounter(priestsCounter, priestsCounter.getAttribute('data-count'), 500, false);
+};
