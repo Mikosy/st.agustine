@@ -19,7 +19,24 @@
 //     });
 // });
 
+// page load 
+window.addEventListener("load", function () {
+    // Fade out after 2 seconds, then hide and show the main content after fade-out completes
+    setTimeout(function () {
+        // Start fade-out
+        const loader = document.getElementById('page-loader');
+        loader.style.opacity = '0'; // Trigger the fade-out effect
 
+        // Wait for the fade-out transition to complete (1 second) before hiding
+        setTimeout(function () {
+            loader.style.display = 'none'; // Hide the loader completely
+            document.getElementById('main-content').style.display = 'block'; // Show the main content
+        }, 1000); // 1 second = duration of the fade-out effect
+    }, 2000); // Initial delay of 2 seconds before starting the fade-out
+});
+
+
+// parishioners count
 function animateCounter(counterElement, targetValue, duration, isFormatted) {
     let startValue = 0;
     const stepTime = Math.abs(Math.floor(duration / targetValue));

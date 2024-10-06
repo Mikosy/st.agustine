@@ -10,6 +10,7 @@
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  transition: 2s ease in;
 }
 
 em {
@@ -19,6 +20,63 @@ em {
 
 a {
   text-decoration: none;
+}
+
+#page-loader {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1s ease;
+}
+
+#page-loader h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Cedarville Cursive", cursive;
+  color: #a57523;
+
+  /* Typing effect styles */
+  border-right: 3px solid #a57523;
+  /* Simulate cursor */
+  white-space: nowrap;
+  /* Prevent text wrapping */
+  overflow: hidden;
+  /* Hide overflowing text */
+  width: 0;
+  /* Start with no width */
+  animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Keyframes for typing */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+    /* Full width of the text */
+  }
+}
+
+/* Keyframes for blinking cursor */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #a57523;
+  }
+}
+
+#main-content {
+  display: none;
+  /* Initially hidden */
 }
 
 /* header/nav style start */
@@ -386,6 +444,22 @@ select:focus {
 
 .statutory-bodies .accordion .accordion-item .accordion-header .accordion-button {
   border-radius: 20px;
+  border-bottom: 3px solid #8d5f0a;
+  color: #8d5f0a;
+}
+
+.contact {
+  background-image: linear-gradient(to top, transparent, #a66e0f), url(../images/3d-background-with-white-cubes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  height: 60vh;
+}
+
+.contact .contact-form {
+  height: 500px;
+  width: auto;
+  background: #fff;
 }
 
 /* End */
