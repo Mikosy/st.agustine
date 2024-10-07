@@ -453,13 +453,22 @@ select:focus {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10px;
-  height: 60vh;
 }
 
 .contact .contact-form {
-  height: 500px;
   width: auto;
-  background: #fff;
+  background-image: url(../images/close-up-creative-background-with-white-shapes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.contact .icons {
+  width: 40px;
+  height: 200px;
+  background-color: #222;
+  padding: 12px;
+  border-bottom-right-radius: 20px;
 }
 
 /* End */

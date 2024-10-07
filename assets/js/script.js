@@ -66,3 +66,4 @@ window.onload = function () {
     // Do not format priests (no commas or "+" sign)
     animateCounter(priestsCounter, priestsCounter.getAttribute('data-count'), 500, false);
 };
+
