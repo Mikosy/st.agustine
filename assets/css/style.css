@@ -447,6 +447,9 @@ select:focus {
   border-bottom: 3px solid #8d5f0a;
   color: #8d5f0a;
 }
+.statuory-contact{
+  margin: 30px;
+}
 
 .contact {
   background-image: linear-gradient(to top, transparent, #a66e0f), url(../images/3d-background-with-white-cubes.jpg);
